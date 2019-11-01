@@ -23,7 +23,7 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     hash = {}
     doc = Nokogiri::HTML(open(profile_url))
-      hash[:bio] = doc.css(".description-holder a").text
+      hash[:bio] = doc.css(".description-holder p").text
       hash[:profile_quote] = doc.css(".profile-quote").text
 
     links = doc.css(".social-icon-container").css("a")
