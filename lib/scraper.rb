@@ -9,7 +9,8 @@ class Scraper
 
     index_page.css("div.roster-cards-container") each do |card|
       card.css("student-card") each do |student|
-      binding.pry
+        binding.pry
+      end
     end
   end
 
