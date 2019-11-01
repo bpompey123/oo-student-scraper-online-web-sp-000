@@ -12,8 +12,8 @@ class Scraper
         student_name = student.css(".student-name").text
         student_location = student.css(".student-location").text
         student_url = student.attr("href")
-        binding.pry
       end
+      
     end
   end
 
