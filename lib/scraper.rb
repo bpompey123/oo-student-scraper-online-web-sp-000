@@ -26,6 +26,9 @@ class Scraper
       hash[:bio] = doc.css("div.description-holder").text
       hash[:profile_quote] = doc.css(".profile-quote").text
 
+    links = doc.css(".social-icon-container").css("a")
+      links.each do |link|
+
 
   end
 
